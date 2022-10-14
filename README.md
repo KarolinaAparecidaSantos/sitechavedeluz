@@ -8,6 +8,6 @@ Link para acessar este site: https://karolinaaparecidasantos.github.io/sitechave
 
 Eu desenvolvi este site no ano de 2012, quando fiz o curso 'Técnico em Informática' no SENAC. Uma das matérias era a de Desenvolvimento de web sites. Ele não foi um trabalho de conclusão de curso. Ele é um projeto pessoal que eu tive vontade de fazer para abrir a mente das pessoas sobre as coisas que acontecem no mundo ao nosso redor e nem nos damos conta devido a distração diária imposta pelo sistema para nos manter distraídos propositalmente.
 
-As tecnologias usadas foram as que eu aprendi no curso, que naquele ano eram: HTML4, CSS3. E utilizei a ferramenta de desenvolvimento 'Adobe Dreamweaver CS5'. Por este motivo os códigos aqui aparecem muito bagunçados. 
+As tecnologias usadas foram as que eu aprendi no curso, que naquele ano eram: HTML4, CSS2. E utilizei a ferramenta de desenvolvimento 'Adobe Dreamweaver CS5'. Por este motivo os códigos aqui aparecem muito bagunçados e o CSS está interno ao invés de estar em um arquivo externo.
 
 O site é todo estático.
