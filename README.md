@@ -2,7 +2,7 @@
 
 Link para acessar este site: https://karolinaaparecidasantos.github.io/sitechavedeluz/
 
-![Image](https://github.com/user-attachments/assets/6fc28ab4-e1b9-4773-910f-c48985e8bbe2)
+![Image](https://github.com/user-attachments/assets/6435adb5-49ce-4067-a053-8c4161808ee2)
 
 
 Eu desenvolvi este site no ano de 2012, quando fiz o curso 'Técnico em Informática' no SENAC. Uma das matérias do curso era a de Desenvolvimento de web sites. 
