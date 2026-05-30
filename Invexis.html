@@ -1,195 +1,586 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" type="image/svg+xml" href="logo_barra.png" />
-<title>Chave de Luz - Invéxis e Recéxis</title>
-<style type="text/css">
-<!--
-#pagina {
-	width: 826px;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #CCC;
-	height: 5320px;
-}
-#logo {
-	position:relative;
-	width:826px;
-	height:10px;
-	background-image: url(imagens/menu_principal.jpg);
-	background-repeat: no-repeat;
-	padding-top: 110px;
-	padding-left: 0px;
-	z-index: 2;
-}
-#menu {
-	position:absolute;
-	left:0px;
-	top:122px;
-	width:826px;
-	height:30px;
-	z-index:3;
-	background-color: #FFF;
-}
-#conteudo {
-	position:absolute;
-	left:14px;
-	top:39px;
-	width:777px;
-	height:5120px;
-	z-index:3;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	background-color: #CCC;
-	text-align: justify;
-	padding: 12px;
-	border: 1px solid #909;
-}
-#video1 {
-	position:absolute;
-	left:25px;
-	top:700px;
-	width:640px;
-	height:360px;
-	z-index:3;
-}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/svg+xml" href="logo_barra.png" />
+    <title>Chave de Luz - Invéxis e Recéxis</title>
+    <style type="text/css">
+      <!--
+      #pagina {
+      	width: 826px;
+      	margin-right: auto;
+      	margin-left: auto;
+      	background-color: #CCC;
+      	height: 5320px;
+      }
+      #logo {
+      	position:relative;
+      	width:826px;
+      	height:10px;
+      	background-image: url(imagens/menu_principal.jpg);
+      	background-repeat: no-repeat;
+      	padding-top: 110px;
+      	padding-left: 0px;
+      	z-index: 2;
+      }
+      #menu {
+      	position:absolute;
+      	left:0px;
+      	top:122px;
+      	width:826px;
+      	height:30px;
+      	z-index:3;
+      	background-color: #FFF;
+      }
+      #conteudo {
+      	position:absolute;
+      	left:14px;
+      	top:39px;
+      	width:777px;
+      	height:5120px;
+      	z-index:3;
+      	font-family: Arial, Helvetica, sans-serif;
+      	font-size: 16px;
+      	background-color: #CCC;
+      	text-align: justify;
+      	padding: 12px;
+      	border: 1px solid #909;
+      }
+      #video1 {
+      	position:absolute;
+      	left:25px;
+      	top:700px;
+      	width:640px;
+      	height:360px;
+      	z-index:3;
+      }
 
-#video2 {
-	position:absolute;
-	left:25px;
-	top:4250px;
-	width:640px;
-	height:360px;
-	z-index:3;
-}
+      #video2 {
+      	position:absolute;
+      	left:25px;
+      	top:4250px;
+      	width:640px;
+      	height:360px;
+      	z-index:3;
+      }
 
-#video3 {
-	position:absolute;
-	left:25px;
-	top:4700px;
-	width:640px;
-	height:360px;
-	z-index:3;
-}
--->
-</style>
-<script type="text/javascript">
-<!--
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+      #video3 {
+      	position:absolute;
+      	left:25px;
+      	top:4700px;
+      	width:640px;
+      	height:360px;
+      	z-index:3;
+      }
+      -->
+    </style>
+    <script type="text/javascript">
+      <!--
+      function MM_swapImgRestore() {
+        //v3.0
+        var i,
+          x,
+          a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++)
+          x.src = x.oSrc;
+      }
+      function MM_preloadImages() {
+        //v3.0
+        var d = document;
+        if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i,
+            j = d.MM_p.length,
+            a = MM_preloadImages.arguments;
+          for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) {
+              d.MM_p[j] = new Image();
+              d.MM_p[j++].src = a[i];
+            }
+        }
+      }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+      function MM_findObj(n, d) {
+        //v4.01
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document;
+          n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++)
+          x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+      }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-</head>
+      function MM_swapImage() {
+        //v3.0
+        var i,
+          j = 0,
+          x,
+          a = MM_swapImage.arguments;
+        document.MM_sr = new Array();
+        for (i = 0; i < a.length - 2; i += 3)
+          if ((x = MM_findObj(a[i])) != null) {
+            document.MM_sr[j++] = x;
+            if (!x.oSrc) x.oSrc = x.src;
+            x.src = a[i + 2];
+          }
+      }
+      //-->
+    </script>
+  </head>
 
-<body background="matrix_fundo.jpg">
-<div id="pagina">
-  <div id="logo">
-    <div id="menu">
-  <div id="conteudo">
-      <h1 align="center">INVÉXIS E RECÉXIS</h1>
-      <h3 align="center">TÉCNICAS EVOLUTIVAS</h3>
-      <p><strong>Invéxis e recéxis são duas técnicas evolutivas da Conscienciologia que propõem otimizar a evolução das conscins interessadas. A Invéxis é a Inversão Existencial, enquanto a Recéxis é a Reciclagem Existencial.</strong></p>
-      <!-- Video: O que é a Conscienciologia? - Boas Vindas de Waldo Vieira aos Intermissivistas -->
-      <!-- https://www.youtube.com/watch?v=dDG1JhfLWxs -->
+  <body background="matrix_fundo.jpg">
+    <div id="pagina">
+      <div id="logo">
+        <div id="menu">
+          <div id="conteudo">
+            <h1 align="center">INVÉXIS E RECÉXIS</h1>
+            <h3 align="center">TÉCNICAS EVOLUTIVAS</h3>
+            <p>
+              <strong
+                >Invéxis e recéxis são duas técnicas evolutivas da
+                Conscienciologia que propõem otimizar a evolução das conscins
+                interessadas. A Invéxis é a Inversão Existencial, enquanto a
+                Recéxis é a Reciclagem Existencial.</strong
+              >
+            </p>
+            <!-- Video: O que é a Conscienciologia? - Boas Vindas de Waldo Vieira aos Intermissivistas -->
+            <!-- https://www.youtube.com/watch?v=dDG1JhfLWxs -->
 
-    <!-- <ul type="disc">
+            <!-- <ul type="disc">
       <li>Vestibulum ullamcorper velit non odio vestibulum molestie sed at diam.</strong>,</li>
       <li>Vestibulum ullamcorper velit non odio vestibulum molestie sed at diam.</li>
       <li>Vestibulum ullamcorper velit non odio vestibulum molestie sed at diam.</li>
       <li>Vestibulum ullamcorper velit non odio vestibulum molestie sed at diam.</li>
       <li>Vestibulum ullamcorper velit non odio vestibulum molestie sed at diam.</li>
     </ul> -->
-    <h2 align="center">Invéxis (breve introdução)</h2>
-    <p><img src="imagens/invexis/Capa-livro-Inversao_existencial.png" width="200" height="300" align="left" alt="Página em construção" />Invéxis (Inversão Existencial) é a técnica evolutiva de otimização máxima da vida intrafísica, com base na Conscienciologia, aplicada desde a juventude, gerando a antecipação da holomaturidade consciencial, por meio de escolhas assertivas e profiláticas, objetivando o cumprimento precoce da programação existencial e consequente aceleração do processo evolutivo consciencial.</p>
-     <p>Um dos principais resultados da aplicação eficaz da Invéxis é a antecipação da consecução da Programação Existencial (Proéxis) para antes dos 36 anos de idade biológica (período natural de maior maturidade psicológica e estabilidade econômica). </p>
-     <p>Aplicando a Invéxis é possível iniciar ainda na juventude as tarefas assistenciais, reciclagens intraconscienciais, buscas de autoconhecimento e desenvolvimento parapsíquico hígido, fundamentado no trabalho cosmoético com as energias, o qual tem por base o uso do EV.</p>
-     <br>
-     <p>A<b> unidade de medida da invéxis</b> é a <b>Precocidade*</b>. </p>
-     <p><b>*O que é precocidade?</b> <br><u>Precocidade</u> é a característica ou qualidade do que é precoce, referindo-se a tudo que se desenvolve, amadurece ou ocorre antes do tempo esperado, comum ou natural. Indica um desenvolvimento acelerado, seja físico, intelectual ou biológico, muitas vezes descrito como prematuro.</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <hr>
-    <h2 align="center">Inversão Existencial</h2>
-    <p><b>Inversão Existencial</b> ou <b>invéxis</b> é a técnica de planejamento máximo da vida humana, fundamentada na Conscienciologia, aplicada desde a juventude, objetivando o cumprimento da programação existencial, o exercício precoce da assistência e a evolução.</p>
-    <p>Este planejamento técnico é realizado sem influências de dogmas, religião, misticismo, doutrinas sectárias, ideologias político-partidárias ou quaisquer compromissos escravizantes, tolhedores da liberdade da ideias e expressão.</p>
-    <p>A aplicação da técnica se inicia até aos 26 anos de idade, antes da maturidade biológica, quando o jovem ainda está delienando a própria vida, descomprometido de <em>amarras</em> sociais e ainda com maior flexibilidade para promover renovações íntimas.</p>
-    <p>A invéxis parte do princípio de que a pessoa não precisa até a meia-idade, período de maior maturidade psicológica e estabilidade econômica, para conhecer a si mesma, avaliar as prioridades evolutivas, suas realizações pessoais e promover a assistêncialidade além do círculo familiar e de amigos.</p>
-    <p><em>A invéxis não é meta evolutiva em si, mas um meio, recurso ou estratégia para se alcançar com maior eficiência o êxito na programação existencial.</em></p>
-    <p>A técnica também engloba o entendimento e a vivência homeostática da multidimensionalidade, a interação lúcida e a assistência às consciencias extrafísicas (consciexes, espíritos, indivíduos que já passaram pela morte biológica). Neste contexto importa ao inversor existencial ter razoável desenvoltura quanto às bioenergias e ao parapsiquismo, principalmente quanto ao domínio do estado vibracional.</p>
-    <hr>
-    <h2 align="center">Assinvéxis</h2>
-    <p><img src="imagens/invexis/Assinvexis1.png" width="330" height="90" align="left" alt="Logo da Assinvéxis" />Canais da Assinvéxis: <br> Site institucional: <a href="https://assinvexis.org/" target="_blank">assinvexis.org</a> <br> <br> Canal oficial da Assinvéxis no YouTube: <br> <a href="https://www.youtube.com/@ASSINVEXIS" target="_blank">youtube.com/@ASSINVEXIS</a></p> 
-    <p><img src="imagens/invexis/Podcast.png" width="779" height="237" align="left" alt="Logo da Assinvéxis" />Canal oficial do Podcast Inteligência Evolutiva no YouTube: <br><a href="https://www.youtube.com/@inteligencia_evolutiva" target="_blank">youtube.com/@inteligencia_evolutiva</a> <br> <br>No canal do YouTube Inteligência Evolutiva, são discutidos temas variados sobre o parapsiquismo, planejamento de vida, maturidade precoce, entre outros — tudo sob a ótica da Inversão Existencial. </p>
-    <hr>
-    <h2 align="center">Recéxis</h2>
-     <p><img src="imagens/invexis/livro-Recexis.png" width="291" height="409" align="right" alt="Capa de livro sobre Reciclagem Existencial" />Recéxis (Reciclagem Existencial) é a técnica evolutiva de reorganização e realinhamento completo do curso e perspectiva da vida humana da conscin, fundamentada na Conscienciologia, aplicada, geralmente, após a juventude, objetivando o melhor aproveitamento do tempo de vida ainda disponível, em prol do cumprimento satisfatório da proéxis pessoal.</p>
-      <p>A técnica da <em>reciclagem existencial</em> ou recéxis objetiva a renovação,a autocorreção e a mudança para melhor do rumo da vida, fundamentada na Conscienciologia (VIEIRA, 1994, p. 682). </p>
-      <p> Este recurso evolutivo é adequado para a conscin que anseia reciclar a existência e começar a priorizar a proéxis já na adultidade, ou ainda adolescente, mas possui algum impedimento quanto à invéxis. Recéxis não é um "prêmio de consolação" para quem não é inversor; é uma técnica que exije dedicação, despojamento para renovações, um reconhecimento de que as escolhas que fez e a trajetória realizada até o momento precisam ser mudadas.</p>
-      <p>PÁGINA AINDA EM PRODUÇÃO.</p>
-      <p>Duis condimentum libero et arcu laoreet, id placerat est vulputate. Duis commodo mi quis nisl volutpat pretium. Nulla sodales vitae tellus id posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur elementum efficitur facilisis. Praesent eu blandit felis.</p>
-      <p>Umas das metas em comum entre inversores e reciclantes é a produção de gescons, fundamentais em quaisquer proéxis.</p>
-      <!-- Página 71 do livro Inversão Existencial -->
-      <hr>
-      <h2 align="center">Curso Intermissivo, Proéxis e Compléxis</h2>
-      <p><img src="imagens/invexis/Periodo_Intermissivo.png" width="460" height="232" align="left" alt="Página em construção" /></p>
-      <p>&nbsp;</p>
-      <p>Intermissão (Intervalo das encarnações) / Erraticidade</p>
-      <h5>Imagem retirada do site Consciencial <a href="https://consciencial.org/espiritualismo-universalista-ciencia/frases-do-livro-o-dharma-e-suas-leis-de-ramatis/">consciencial.org</a></h5>
-      <br>
-      <p>O período extrafísico da consciência entre duas vidas humanas denomina-se <em>intermissão</em>. Este intervalo é vivenciado nas dimensões extrafísicas, com maior ou menor lucidez e aproveitamento evolutivo. A duração da intermissão varia em cada caso.</p>
-      <p><b><em>Curso intermissivo</em></b> é o conjunto de matérias e aulas ministradas no intervalo entre vidas, no qual conciexes predispostas e com <em>ficha holobiográfica favorável</em> atuam enquanto alunas na preparação da ressoma (nova vida humana) e da proéxis. O objetivo é capacitar as consciexes (consciências extrafísicas) para tarefas interassistenciais em sua próxima vida, sendo habilitadas a executar trabalhos específicos de caráter pessoal (renovação íntima) e coletivo.</p>
-      <p>A capacitação ocorre principalmente pela autopesquisa profunda a partir da visão panorâmica de experiências pretéritas (vidas passadas), possibilitando a organização da próxima vida.</p>
-      <p>Este conjunto de tarefas especializadas ou <em>missão de vida</em> (expressão popular) denomina-se Programação Existencial (<em><b>Proéxis</b></em>). Trata-se de atribuições assumidas pela própria consciência, sempre assistênciais, supervisionadas por um evoluciólogo.</p>
-      <p>De acordo com Vieira (1998), exitem dois tipos básicos de proéxis:</p>
-      <p>a. <em><b>Miniproéxis.</b></em> São tarefas simples, varejistas, com predominância na <em>caridade</em> e na tarefa da consolação (tacon). Muitas vezes têm forte apelo religioso, emocional, mais assistencialistas do que assistenciais. Restringe-se ao ego e grupocarma. </p>
-      <p>b. <em><b>Maxiproéxis.</b></em> São tarefas complexas, atacadistas, grupais, policármicas, com predomínio na <em>racionalidade</em> e na tarefa do esclarecimento (tares); incentivam o senso crítico, a autonomia intelectual, emocional, psicológica e energética; são assistenciais com eficiência e universalismo.</p>
-      <br>
-      <p>O cumprimento integral da proéxis é o <em>completismo existencial (<b>compléxis</b>)</em>. A consciência materializa, na dimensão intrafísica, os compromissos assumidos no curso intermissivo, consigo mesma e com outras. Nem todo completista existencial da maxiproéxis é inversor ou inversora, mas invéxis pressupõe maxiproéxis. A maxiproéxis envolve o esclarecimento a maior número de pessoas quanto à multidimensionalidade e aos cursos intermissivos, atuando como agente retrocognitor inato.</p>
-      <p> Produção de livros, docência, liderança em empreendimentos úteis, dupla evolutiva, tenepes, são exemplos de prioridades na maxiproéxis, dinamizadores da auto e heteroevolução. Este gênero de proéxis envolve maior responsabilidade por parte da conscin, pois o trabalho vincula-se necessariamente às reciclagens intraconscienciais, ou mudanças íntimas, pró-evolutivas em grupo.</p>
-      <p>Uma vida humana, durando em média 70 anos, pode ser dividida em duas fases, em relação à proéxis:</p>
-      <p>a. <em><b>Fase Preparatória:</b></em> até os 35 anos de idade. É o período voltado à preparação pessoal, escolaridade e aquisição de experiências indispensáveis ao amadurecimento consciencial.</p>
-      <p>b. <em><b>Fase Executiva:</b></em> dos 35 anos de idade até a dessoma. Período em que a base da vida já deve estar assentada. O maxiplanejamento desde a juventude favorece a maior disponibilidade à proéxis nesta fase. A invéxis visa à antecipação da fase executiva com maior produtividade. <em>A antecipação da fase executiva não é ansiedade nem precipitação.</em> O jovem já faz assistência com os recursos pessoais disponíveis, sem alijar-se das obrigações cotidianas e indispensáveis.</p>
-      <br>
-      <p>A invéxis é a técnica de otimização máxima para se alcançar o compléxis. Ao contrário, na sociedade busca-se prolongar a adolescência, retardando a fase adulta e consequantemente a fase executiva da proéxis. A geração canguru (filhos com mais de 30 anos morando na casa dos pais) é um exemplo de como o jovem é estimulado a permanecer infantil, egoísta e hedonista e com valores de vida superficiais. </p>
-      <!-- página 37 do livro Inversão Existencial, de Alexandre Nonato, Alexadre Zaslavsky, Filipe Colpo, Flávio Amaral e Silvia Muradás. -->
-      <!--  <p> Link: <a href="http://www.google.com/sky/" target="_blank">http://www.google.com/sky/</a> </p> -->
-      <div id="video1"><iframe width="750" height="400" src="https://www.youtube.com/embed/e1eOC3nLKHg?si=D5-gg7aa3-605aOS&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div id="video2"><iframe width="750" height="400" src="https://www.youtube.com/embed/zA7JSjzcWnk?si=3icI_VAar1IBA2LQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div id="video3"><iframe width="750" height="400" src="https://www.youtube.com/embed/VDr9skDb3aw?si=rDuIIN9TYwi0gUDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-  </div>
-  <a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagem1','','imagens/btn_home_branco.jpg',1)"><img src="imagens/btn_home_teste2.jpg" alt="home" width="177" height="30" border="0" id="Imagem1" /></a><a href="mapa_do_site.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagem2','','imagens/btn_mapasite_branco.jpg',1)"><img src="imagens/btn_mapasite_teste2.jpg" alt="mapa do site" width="219" height="30" border="0" id="Imagem2" /></a><a href="Contato.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagem3','','imagens/btn_contato_branco.jpg',1)"><img src="imagens/btn_contato_teste2.jpg" alt="contato" width="187" height="30" border="0" id="Imagem3" /></a><a href="dicas_de_sites.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagem4','','imagens/btn_dicas_branco.jpg',1)"><img src="imagens/btn_dicas_teste2.jpg" alt="dicas de sites" width="243" height="30" border="0" id="Imagem4" /></a></div>
-</div>
-</div>
-</body>
+            <h2 align="center">Invéxis (breve introdução)</h2>
+            <p>
+              <img
+                src="imagens/invexis/Capa-livro-Inversao_existencial.png"
+                width="200"
+                height="300"
+                align="left"
+                alt="Página em construção"
+              />Invéxis (Inversão Existencial) é a técnica evolutiva de
+              otimização máxima da vida intrafísica, com base na
+              Conscienciologia, aplicada desde a juventude, gerando a
+              antecipação da holomaturidade consciencial, por meio de escolhas
+              assertivas e profiláticas, objetivando o cumprimento precoce da
+              programação existencial e consequente aceleração do processo
+              evolutivo consciencial.
+            </p>
+            <p>
+              Um dos principais resultados da aplicação eficaz da Invéxis é a
+              antecipação da consecução da Programação Existencial (Proéxis)
+              para antes dos 36 anos de idade biológica (período natural de
+              maior maturidade psicológica e estabilidade econômica).
+            </p>
+            <p>
+              Aplicando a Invéxis é possível iniciar ainda na juventude as
+              tarefas assistenciais, reciclagens intraconscienciais, buscas de
+              autoconhecimento e desenvolvimento parapsíquico hígido,
+              fundamentado no trabalho cosmoético com as energias, o qual tem
+              por base o uso do EV.
+            </p>
+            <br />
+            <p>
+              A<b> unidade de medida da invéxis</b> é a <b>Precocidade*</b>.
+            </p>
+            <p>
+              <b>*O que é precocidade?</b> <br /><u>Precocidade</u> é a
+              característica ou qualidade do que é precoce, referindo-se a tudo
+              que se desenvolve, amadurece ou ocorre antes do tempo esperado,
+              comum ou natural. Indica um desenvolvimento acelerado, seja
+              físico, intelectual ou biológico, muitas vezes descrito como
+              prematuro.
+            </p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <hr />
+            <h2 align="center">Inversão Existencial</h2>
+            <p>
+              <b>Inversão Existencial</b> ou <b>invéxis</b> é a técnica de
+              planejamento máximo da vida humana, fundamentada na
+              Conscienciologia, aplicada desde a juventude, objetivando o
+              cumprimento da programação existencial, o exercício precoce da
+              assistência e a evolução.
+            </p>
+            <p>
+              Este planejamento técnico é realizado sem influências de dogmas,
+              religião, misticismo, doutrinas sectárias, ideologias
+              político-partidárias ou quaisquer compromissos escravizantes,
+              tolhedores da liberdade da ideias e expressão.
+            </p>
+            <p>
+              A aplicação da técnica se inicia até aos 26 anos de idade, antes
+              da maturidade biológica, quando o jovem ainda está delienando a
+              própria vida, descomprometido de <em>amarras</em> sociais e ainda
+              com maior flexibilidade para promover renovações íntimas.
+            </p>
+            <p>
+              A invéxis parte do princípio de que a pessoa não precisa até a
+              meia-idade, período de maior maturidade psicológica e estabilidade
+              econômica, para conhecer a si mesma, avaliar as prioridades
+              evolutivas, suas realizações pessoais e promover a
+              assistêncialidade além do círculo familiar e de amigos.
+            </p>
+            <p>
+              <em
+                >A invéxis não é meta evolutiva em si, mas um meio, recurso ou
+                estratégia para se alcançar com maior eficiência o êxito na
+                programação existencial.</em
+              >
+            </p>
+            <p>
+              A técnica também engloba o entendimento e a vivência homeostática
+              da multidimensionalidade, a interação lúcida e a assistência às
+              consciencias extrafísicas (consciexes, espíritos, indivíduos que
+              já passaram pela morte biológica). Neste contexto importa ao
+              inversor existencial ter razoável desenvoltura quanto às
+              bioenergias e ao parapsiquismo, principalmente quanto ao domínio
+              do estado vibracional.
+            </p>
+            <hr />
+            <h2 align="center">Assinvéxis</h2>
+            <p>
+              <img
+                src="imagens/invexis/Assinvexis1.png"
+                width="330"
+                height="90"
+                align="left"
+                alt="Logo da Assinvéxis"
+              />Canais da Assinvéxis: <br />
+              Site institucional:
+              <a href="https://assinvexis.org/" target="_blank"
+                >assinvexis.org</a
+              >
+              <br />
+              <br />
+              Canal oficial da Assinvéxis no YouTube: <br />
+              <a href="https://www.youtube.com/@ASSINVEXIS" target="_blank"
+                >youtube.com/@ASSINVEXIS</a
+              >
+            </p>
+            <p>
+              <img
+                src="imagens/invexis/Podcast.png"
+                width="779"
+                height="237"
+                align="left"
+                alt="Logo da Assinvéxis"
+              />Canal oficial do Podcast Inteligência Evolutiva no YouTube:
+              <br /><a
+                href="https://www.youtube.com/@inteligencia_evolutiva"
+                target="_blank"
+                >youtube.com/@inteligencia_evolutiva</a
+              >
+              <br />
+              <br />No canal do YouTube Inteligência Evolutiva, são discutidos
+              temas variados sobre o parapsiquismo, planejamento de vida,
+              maturidade precoce, entre outros — tudo sob a ótica da Inversão
+              Existencial.
+            </p>
+            <hr />
+            <h2 align="center">Recéxis</h2>
+            <p>
+              <img
+                src="imagens/invexis/livro-Recexis.png"
+                width="291"
+                height="409"
+                align="right"
+                alt="Capa de livro sobre Reciclagem Existencial"
+              />Recéxis (Reciclagem Existencial) é a técnica evolutiva de
+              reorganização e realinhamento completo do curso e perspectiva da
+              vida humana da conscin, fundamentada na Conscienciologia,
+              aplicada, geralmente, após a juventude, objetivando o melhor
+              aproveitamento do tempo de vida ainda disponível, em prol do
+              cumprimento satisfatório da proéxis pessoal.
+            </p>
+            <p>
+              A técnica da <em>reciclagem existencial</em> ou recéxis objetiva a
+              renovação,a autocorreção e a mudança para melhor do rumo da vida,
+              fundamentada na Conscienciologia (VIEIRA, 1994, p. 682).
+            </p>
+            <p>
+              Este recurso evolutivo é adequado para a conscin que anseia
+              reciclar a existência e começar a priorizar a proéxis já na
+              adultidade, ou ainda adolescente, mas possui algum impedimento
+              quanto à invéxis. Recéxis não é um "prêmio de consolação" para
+              quem não é inversor; é uma técnica que exije dedicação,
+              despojamento para renovações, um reconhecimento de que as escolhas
+              que fez e a trajetória realizada até o momento precisam ser
+              mudadas.
+            </p>
+            <p>PÁGINA AINDA EM PRODUÇÃO.</p>
+            <p>
+              Duis condimentum libero et arcu laoreet, id placerat est
+              vulputate. Duis commodo mi quis nisl volutpat pretium. Nulla
+              sodales vitae tellus id posuere. Orci varius natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. Curabitur
+              elementum efficitur facilisis. Praesent eu blandit felis.
+            </p>
+            <p>
+              Umas das metas em comum entre inversores e reciclantes é a
+              produção de gescons, fundamentais em quaisquer proéxis.
+            </p>
+            <!-- Página 71 do livro Inversão Existencial -->
+            <hr />
+            <h2 align="center">Curso Intermissivo, Proéxis e Compléxis</h2>
+            <p>
+              <img
+                src="imagens/invexis/Periodo_Intermissivo.png"
+                width="460"
+                height="232"
+                align="left"
+                alt="Página em construção"
+              />
+            </p>
+            <p>&nbsp;</p>
+            <p>Intermissão (Intervalo das encarnações) / Erraticidade</p>
+            <h5>
+              Imagem retirada do site Consciencial
+              <a
+                href="https://consciencial.org/espiritualismo-universalista-ciencia/frases-do-livro-o-dharma-e-suas-leis-de-ramatis/"
+                >consciencial.org</a
+              >
+            </h5>
+            <br />
+            <p>
+              O período extrafísico da consciência entre duas vidas humanas
+              denomina-se <em>intermissão</em>. Este intervalo é vivenciado nas
+              dimensões extrafísicas, com maior ou menor lucidez e
+              aproveitamento evolutivo. A duração da intermissão varia em cada
+              caso.
+            </p>
+            <p>
+              <b><em>Curso intermissivo</em></b> é o conjunto de matérias e
+              aulas ministradas no intervalo entre vidas, no qual conciexes
+              predispostas e com <em>ficha holobiográfica favorável</em> atuam
+              enquanto alunas na preparação da ressoma (nova vida humana) e da
+              proéxis. O objetivo é capacitar as consciexes (consciências
+              extrafísicas) para tarefas interassistenciais em sua próxima vida,
+              sendo habilitadas a executar trabalhos específicos de caráter
+              pessoal (renovação íntima) e coletivo.
+            </p>
+            <p>
+              A capacitação ocorre principalmente pela autopesquisa profunda a
+              partir da visão panorâmica de experiências pretéritas (vidas
+              passadas), possibilitando a organização da próxima vida.
+            </p>
+            <p>
+              Este conjunto de tarefas especializadas ou
+              <em>missão de vida</em> (expressão popular) denomina-se
+              Programação Existencial (<em><b>Proéxis</b></em
+              >). Trata-se de atribuições assumidas pela própria consciência,
+              sempre assistênciais, supervisionadas por um evoluciólogo.
+            </p>
+            <p>
+              De acordo com Vieira (1998), exitem dois tipos básicos de proéxis:
+            </p>
+            <p>
+              a. <em><b>Miniproéxis.</b></em> São tarefas simples, varejistas,
+              com predominância na <em>caridade</em> e na tarefa da consolação
+              (tacon). Muitas vezes têm forte apelo religioso, emocional, mais
+              assistencialistas do que assistenciais. Restringe-se ao ego e
+              grupocarma.
+            </p>
+            <p>
+              b. <em><b>Maxiproéxis.</b></em> São tarefas complexas,
+              atacadistas, grupais, policármicas, com predomínio na
+              <em>racionalidade</em> e na tarefa do esclarecimento (tares);
+              incentivam o senso crítico, a autonomia intelectual, emocional,
+              psicológica e energética; são assistenciais com eficiência e
+              universalismo.
+            </p>
+            <br />
+            <p>
+              O cumprimento integral da proéxis é o
+              <em>completismo existencial (<b>compléxis</b>)</em>. A consciência
+              materializa, na dimensão intrafísica, os compromissos assumidos no
+              curso intermissivo, consigo mesma e com outras. Nem todo
+              completista existencial da maxiproéxis é inversor ou inversora,
+              mas invéxis pressupõe maxiproéxis. A maxiproéxis envolve o
+              esclarecimento a maior número de pessoas quanto à
+              multidimensionalidade e aos cursos intermissivos, atuando como
+              agente retrocognitor inato.
+            </p>
+            <p>
+              Produção de livros, docência, liderança em empreendimentos úteis,
+              dupla evolutiva, tenepes, são exemplos de prioridades na
+              maxiproéxis, dinamizadores da auto e heteroevolução. Este gênero
+              de proéxis envolve maior responsabilidade por parte da conscin,
+              pois o trabalho vincula-se necessariamente às reciclagens
+              intraconscienciais, ou mudanças íntimas, pró-evolutivas em grupo.
+            </p>
+            <p>
+              Uma vida humana, durando em média 70 anos, pode ser dividida em
+              duas fases, em relação à proéxis:
+            </p>
+            <p>
+              a. <em><b>Fase Preparatória:</b></em> até os 35 anos de idade. É o
+              período voltado à preparação pessoal, escolaridade e aquisição de
+              experiências indispensáveis ao amadurecimento consciencial.
+            </p>
+            <p>
+              b. <em><b>Fase Executiva:</b></em> dos 35 anos de idade até a
+              dessoma. Período em que a base da vida já deve estar assentada. O
+              maxiplanejamento desde a juventude favorece a maior
+              disponibilidade à proéxis nesta fase. A invéxis visa à antecipação
+              da fase executiva com maior produtividade.
+              <em
+                >A antecipação da fase executiva não é ansiedade nem
+                precipitação.</em
+              >
+              O jovem já faz assistência com os recursos pessoais disponíveis,
+              sem alijar-se das obrigações cotidianas e indispensáveis.
+            </p>
+            <br />
+            <p>
+              A invéxis é a técnica de otimização máxima para se alcançar o
+              compléxis. Ao contrário, na sociedade busca-se prolongar a
+              adolescência, retardando a fase adulta e consequantemente a fase
+              executiva da proéxis. A geração canguru (filhos com mais de 30
+              anos morando na casa dos pais) é um exemplo de como o jovem é
+              estimulado a permanecer infantil, egoísta e hedonista e com
+              valores de vida superficiais.
+            </p>
+            <!-- página 37 do livro Inversão Existencial, de Alexandre Nonato, Alexadre Zaslavsky, Filipe Colpo, Flávio Amaral e Silvia Muradás. -->
+            <!--  <p> Link: <a href="http://www.google.com/sky/" target="_blank">http://www.google.com/sky/</a> </p> -->
+            <!-- https://www.youtube.com/watch?v=i4rgvgbDzzM Vídeo sobre Curso Intermissivo -->
+            <!--Outro vídeo sobre inversão existencial: https://www.youtube.com/watch?v=NWsnqgoXi-w-->
+            <div id="video1">
+              <iframe
+                width="750"
+                height="400"
+                src="https://www.youtube.com/embed/e1eOC3nLKHg?si=D5-gg7aa3-605aOS&amp;start=6"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="video2">
+              <iframe
+                width="750"
+                height="400"
+                src="https://www.youtube.com/embed/zA7JSjzcWnk?si=3icI_VAar1IBA2LQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="video3">
+              <iframe
+                width="750"
+                height="400"
+                src="https://www.youtube.com/embed/VDr9skDb3aw?si=rDuIIN9TYwi0gUDN"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <a
+            href="index.html"
+            onmouseout="MM_swapImgRestore()"
+            onmouseover="
+              MM_swapImage('Imagem1', '', 'imagens/btn_home_branco.jpg', 1)
+            "
+            ><img
+              src="imagens/btn_home_teste2.jpg"
+              alt="home"
+              width="177"
+              height="30"
+              border="0"
+              id="Imagem1" /></a
+          ><a
+            href="mapa_do_site.html"
+            onmouseout="MM_swapImgRestore()"
+            onmouseover="
+              MM_swapImage('Imagem2', '', 'imagens/btn_mapasite_branco.jpg', 1)
+            "
+            ><img
+              src="imagens/btn_mapasite_teste2.jpg"
+              alt="mapa do site"
+              width="219"
+              height="30"
+              border="0"
+              id="Imagem2" /></a
+          ><a
+            href="Contato.html"
+            onmouseout="MM_swapImgRestore()"
+            onmouseover="
+              MM_swapImage('Imagem3', '', 'imagens/btn_contato_branco.jpg', 1)
+            "
+            ><img
+              src="imagens/btn_contato_teste2.jpg"
+              alt="contato"
+              width="187"
+              height="30"
+              border="0"
+              id="Imagem3" /></a
+          ><a
+            href="dicas_de_sites.html"
+            onmouseout="MM_swapImgRestore()"
+            onmouseover="
+              MM_swapImage('Imagem4', '', 'imagens/btn_dicas_branco.jpg', 1)
+            "
+            ><img
+              src="imagens/btn_dicas_teste2.jpg"
+              alt="dicas de sites"
+              width="243"
+              height="30"
+              border="0"
+              id="Imagem4"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
